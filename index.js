@@ -19,14 +19,14 @@ const mail = (subject, text) => {
     var transporter = nodemailer.createTransport({
         service: 'outlook',
         auth: {
-            user: 'pro.developer@proactive.co.in',
-            pass: 'Proact@123'
+            user: 'pro.XXXXXXXXXXXXXXXXXXX@proactive.co.in',
+            pass: 'XXXXXXXXXXXXXXXXX@123'
         }
     });
 
     var mailOptions = {
-        from: 'pro.developer@proactive.co.in',
-        to: 'kapil.kumar@proactive.co.in',
+        from: 'pro.XXXXXXXXXXXXXXXX@proactive.co.in',
+        to: 'XXXXXXXXXXXX.XXXXXXXXXX@proactive.co.in',
         subject: subject,
         text: text
     };
@@ -57,7 +57,7 @@ const getwebextoken = async () => {
 
         const response = await axios({
             'method': 'post',
-            url: 'https://webexapis.com/v1/access_token?grant_type=refresh_token&client_id=Cddad4b9d5566e911b8a86569cbf28a00b8de6d785157be3ab836476fea64d1c9&client_secret=9dd63f0ec6b33f6dd0cccc8886cecc6d917471a35acc846f81d19a0cfed1b193&refresh_token=NmU2NWZjZmMtMGQ4My00YTA1LTgzYWEtMjM1ZWJiNjZjOTFhOGM1MmIwNzctNjE5_PF84_3bf06e7b-f230-427f-9163-c54d2e428d6a',
+            url: 'https://webexapis.com/v1/access_token?grant_type=refresh_token&client_id=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&refresh_token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-f230-427f-9163-c54d2e428d6a',
             'headers': {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
@@ -82,7 +82,7 @@ const getzohotoken = async () => {
         });
         const response = await axios({
             'method': 'post',
-            url: 'https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.3d6ae178a2e29685989160118f75ec99.7d80bb43db46acdef1d34e90c19a7b7d&client_id=1000.XLUX2G854HEVITG926DHT8LHH76G4H&client_secret=f743c69558faf7d852d8e99651b170862268287f51&grant_type=refresh_token',
+            url: 'https://accounts.zoho.com/oauth/v2/token?refresh_token=1000.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXX&client_id=1000.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&grant_type=refresh_token',
             'headers': {
                 'Content-Type': 'application/json',
             },
